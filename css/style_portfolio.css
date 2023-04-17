@@ -1,0 +1,265 @@
+@charset "utf-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Rajdhani:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gowun+Dodum&family=Rajdhani:wght@400;500&display=swap');
+
+/* reset */
+* {margin: 0;padding: 0;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 700; font-size: inherit;}
+a {color: inherit; text-decoration: inherit;}
+img {vertical-align: middle;}
+a img {border: none;}
+li {list-style: none;}
+address, em, i {font-style: normal;}
+a:focus {outline: none}
+button:focus {outline: none}
+
+
+/* Layout */
+body {font-family: 'Noto Sans KR', sans-serif; color: #333333;}
+.wrap {width: 100%; overflow: hidden;margin: 0 auto; position: relative; line-height: 1.2;}
+.en {font-family: 'Rajdhani', sans-serif;}  /* 메인 텍스트 영어폰트 */
+h2,p {font-family: 'Rajdhani', sans-serif; font-size: 110px;}
+span {color:#E21E2F; font-weight: bold;}
+
+/* Top 버튼 */
+.btn_gotop {position:fixed; bottom:35px; right:20px; z-index:99;display: none;}
+
+
+/* menuOpen */
+.menuOpen button.open {background: none; border: none; position: fixed; z-index: 100; right: 50px; top: 50%; transform: translateY(-50%); padding: 30px 22px; box-sizing: border-box;}
+.menuOpen button.open .gnb2 {width: 80px; position: absolute; opacity: 0; top: 30px; right: 26px;}
+.menuOpen button.open img {width: 80px;}
+.menuOpen button.open:hover .gnb2 {opacity: 1; cursor: pointer;}
+.menuOpen button.open:hover .gnb {opacity: 0;}
+
+/* menuWrap */
+.menuOpen .menuWrap {width: 50%; height: 100vh; position: fixed; top: 0; right: 0; z-index: 100; background: #FFFBEE;}
+.menuOpen .menuWrap ul {color: #1E1D1C; position: absolute; top: 50%; transform: translateY(-50%); left: 25%; font-size: 90px; font-family: 'Rajdhani', sans-serif;}
+.menuOpen .menuWrap ul li a {margin-bottom: 20px; display: inline-block; position: relative; transition: all 0.3s;}
+.menuOpen .menuWrap ul li a:hover, .menuOpen .menuWrap .tit li a:focus {transform: translateX(30px); color: #E21E2F; transition: all 0.3s;}
+.menuOpen .menuWrap ul li a:hover:after, .menuOpen .menuWrap .tit li a:focus:after {width: 100%;}
+.menuOpen .menuWrap .close {position: absolute; right: 50px; top: 50px;}
+
+.menuOpen .menuWrap {width: 0; transition: 0; overflow: hidden; opacity: 0;}
+.menuOpen .menuWrap span {color: #1E1D1C;}
+.menuOpen .menuWrap span:hover {color: #E21E2F; transition: all 0.2s;}
+.menuOpen .menuWrap.on {width: 30%; right: 0; transform: skewY(0deg);  transition: 0.5s; opacity: 1;}
+.menuOpen .menuWrap .tit {display: none; }
+.menuOpen .menuWrap.on .tit {display: block;}
+
+/* header */
+header {width: 100%; height: 130px; background: #F4D35E;}
+.innerHeader {padding: 0 250px; height: 130px;}
+.innerHeader .gnb {width: 100%; display: flex; font-family: 'Rajdhani', sans-serif; font-size: 25px; justify-content: space-between; line-height: 130px;}
+.innerHeader .gnb li:nth-child(1):hover,.innerHeader .gnb li:nth-child(2):hover, .innerHeader .gnb li:nth-child(6):hover, .innerHeader .gnb li:nth-child(7):hover {font-weight: bold; color: #E21E2F ; transition: all 0.2s;}
+
+
+/* content */
+.content {width: 100%; height: 6100px; background: #F4D35E; position: relative;}
+.content .inner {width:80%; margin: auto; padding: 130px 0px;}
+.content .inner h2 {text-align: center;}
+
+.content .inner span.num {color: #333333;}
+.content .inner em {font-family: 'Send Flowers', cursive; font-size: 120px;}
+
+
+/* content_first */
+.content .inner .first {width: 1500px; height: 480px; background: #fff; position: absolute; top: 400px; left: 50%; transform: translateX(-50%); border-radius: 300px 20px 20px 20px;}
+.content .inner .first .txt {font-family: 'Rajdhani', sans-serif; color: #333333; position: absolute; top: 100px; left: 120px;}
+.content .inner .first b {font-size: 45px; padding: 0 30px}
+.content .inner .first p {font-size: 23px; padding: 10px 90px;}
+.content .inner .first img {position: absolute; top: 40px; right: 45px;}
+
+/* content_second */
+.content .second {width: 1500px; height: 480px; background: #fff; position: absolute; top: 930px; left: 50%; transform: translateX(-50%); border-radius: 20px;}
+.content .inner .second .txt {font-family: 'Rajdhani', sans-serif; color: #333333; position: absolute; top: 100px; right: 20px;}
+.content .inner .second b {font-size: 45px; padding: 0 30px}
+.content .inner .second p {font-size: 23px; padding: 10px 40px 0 125px;}
+.content .second img {position: absolute; top: 45px; left: 45px;}
+
+/* content_third */
+.content .third {width: 1500px; height: 480px; background: #fff; position: absolute; top: 1460px; left: 50%; transform: translateX(-50%); border-radius: 20px;}
+.content .inner .third .txt {font-family: 'Rajdhani', sans-serif; color: #333333; position: absolute; top: 100px; left: 150px;}
+.content .inner .third b {font-size: 45px; padding: 0 30px}
+.content .inner .third p {font-size: 23px; padding: 10px 125px;}
+.content .inner .third img {position: absolute; top: 60px; right: 45px;}
+
+/* content_forth */
+.content .forth {width: 1500px; height: 480px; background: #fff; position: absolute; top: 1990px; left: 50%; transform: translateX(-50%); border-radius: 20px;}
+.content .inner .forth .txt {font-family: 'Rajdhani', sans-serif; color: #333333; position: absolute; top: 80px; right: 40px;}
+.content .inner .forth b {font-size: 45px; padding: 0 30px}
+.content .inner .forth p {font-size: 23px; padding: 10px 45px 0 120px;}
+
+
+.content .forth .imga {width: 200px; height:380px; text-align: center;padding: 20px 13px; box-sizing: border-box; justify-content: space-between; position: absolute; top: 40px; left: 50px;transition: all 0.2s;}
+.content .forth .imga h3 {font-size: 12px; font-family: 'Noto Sans KR', sans-serif; font-weight: bold;}
+.content .forth .imga p {font-family: 'Rajdhani', sans-serif; font-size: 15px;padding: 10px 3px 10px 3px;}
+.content .forth .imga p:hover {color: #F4D35E; font-weight: bold;}
+.content .forth .imga img {padding: 0px 3px 0px 9px;}
+
+.content .forth .imgb {width: 240px; height:350px;text-align: center;padding: 20px 13px; box-sizing: border-box;  position: absolute; top: 40px; left: 270px;font-size: 12px; font-family: 'Noto Sans KR', sans-serif;transition: all 0.2s;}
+.content .forth .imgb h3 {font-size: 12px; font-family: 'Noto Sans KR', sans-serif; font-weight: bold;}
+.content .forth .imgb p {font-family: 'Rajdhani', sans-serif; font-size: 15px;padding: 10px 3px 10px 3px;}
+.content .forth .imgb p:hover {color: #F4D35E; font-weight: bold;}
+.content .forth .imgb img {padding: 0px 3px 0px 32px;}
+
+.content .forth .imgc {width: 240px; height:350px;text-align: center;padding: 20px 13px; box-sizing: border-box;  position: absolute; top: 40px; left: 520px;font-size: 12px; font-family: 'Noto Sans KR', sans-serif;transition: all 0.2s;}
+.content .forth .imgc h3 {font-size: 12px; font-family: 'Noto Sans KR', sans-serif; font-weight: bold;}
+.content .forth .imgc p {font-family: 'Rajdhani', sans-serif; font-size: 15px; padding: 10px 3px 10px 3px;}
+.content .forth .imgc p:hover {color: #F4D35E; font-weight: bold;}
+.content .forth .imgc img {padding: 0px 3px 0px 12px;}
+
+
+
+
+
+/* content_fifth */
+.content .fifth {width: 1500px; height: 480px; background: #fff; position: absolute; top: 2520px; left: 50%; transform: translateX(-50%); border-radius: 20px;}
+.content .inner .fifth .txt {font-family: 'Rajdhani', sans-serif; color: #333333; position: absolute; top: 115px; left: 50px;}
+.content .inner .fifth b {font-size: 45px; padding: 0 30px}
+.content .inner .fifth p {font-size: 23px; padding: 10px 125px;}
+.content .inner .fifth img {position: absolute; top: 40px; right: 45px; width: 800px;}
+
+
+/* content_sixth */
+.content .sixth {width: 1500px; height: 520px; background: #fff; position: absolute; top: 3050px; left: 50%; transform: translateX(-50%); border-radius: 20px;}
+.content .inner .sixth .txt {font-family: 'Rajdhani', sans-serif; color: #333333; position: absolute; top: 100px; right: 40px;}
+.content .inner .sixth b {font-size: 45px; padding: 0 30px}
+.content .inner .sixth p {font-size: 23px; padding: 10px 45px 0 130px;}
+.content .sixth img {position: absolute; top: 40px; left: -10px; width: 900px;}
+
+
+
+/* content_seventh */
+.content .seventh {width: 1500px; height: 960px; background: #fff; position: absolute; top: 3620px; left: 50%; transform: translateX(-50%); border-radius: 20px;}
+.content .inner .seventh .txt {font-family: 'Rajdhani', sans-serif; color: #333333; position: absolute; top: 115px; left: 100px;}
+.content .inner .seventh b {font-size: 45px; padding: 0 30px}
+.content .inner .seventh p {font-size: 23px; padding: 10px 105px;}
+.content .inner .seventh img {position: absolute; top: -20px; right: -60px; }
+
+
+/* content_eighth */
+.content .eighth {width: 1500px; height: 480px; background: #fff; position: absolute; top: 4630px; left: 50%; transform: translateX(-50%); border-radius: 20px;}
+.content .inner .eighth .txt {font-family: 'Rajdhani', sans-serif; color: #333333; position: absolute; top: 100px; right: 35px;}
+.content .inner .eighth b {font-size: 45px; padding: 0 30px}
+.content .inner .eighth p {font-size: 23px; padding: 10px 45px 0 125px;}
+.content .eighth img {position: absolute; top: 60px; left: 65px; width: 400px; border-radius: 30px;}
+.content .eighth video {position: absolute; top: 195px; left: 300px; border-radius: 30px;}
+
+
+/* content_nineth */
+.content .nineth {width: 1500px; height: 480px; background: #fff; position: absolute; top: 5160px; left: 50%; transform: translateX(-50%); border-radius: 20px 20px 300px 20px;}
+.content .inner .nineth  .txt {font-family: 'Rajdhani', sans-serif; color: #333333; position: absolute; top: 120px; left: 40px;}
+.content .inner .nineth  b {font-size: 45px; padding: 0 30px}
+.content .inner .nineth  p {font-size: 23px; padding: 10px 40px 0 120px; }
+.content .inner .nineth  img {position: absolute; top: -70px; right: 125px; width: 900px;}
+
+
+
+
+/* portfolio */
+.portfolio {width: 100%; height: 1350px; background: #FFFBEE; position: relative;}
+.portfolio .inner .txt {position: absolute; top: 47%; left: 15%; line-height: 1.1;}
+.portfolio .inner .txt p {font-family: 'Rajdhani', sans-serif; font-weight: bold; font-size: 40px; padding: 0 10px;}
+.portfolio .inner > a { border: 2px solid #E21E2F; border-radius: 15px; color: #E21E2F; padding: 7px 13px; background: #fff; font-size: 16px; position: absolute; top: 62%; left: 15.3%;}
+.portfolio .inner .swiper {position: absolute; top: 46%; left: 47%; width: 1000px; height: 350px; }
+
+
+.portfolio .inner > a:hover {background: #E21E2F;color: #fff; transition: all 0.2s; font-weight: bold;}
+.portfolio .swiper .swiper-wrapper {display: flex;}
+.portfolio .swiper .swiper-wrapper .swiper-slide {text-align: 50px; transition: all 0.4s; }
+.portfolio .swiper .swiper-wrapper .swiper-slide a {width: 600px; height: 320px;} 
+.portfolio .swiper .swiper-slide.swiper-slide:hover {scale: 1.1;}
+.portfolio .swiper .swiper-wrapper .swiper-slide img {width: 600px; height: 320px;}
+
+.portfolio .swiper .swiper-button-next {color: rgb(29, 29, 29); position: absolute; top: 47%; right:17%;}
+.portfolio .swiper .swiper-button-prev {color: rgb(29, 29, 29);top: 47%; left: 0%;}
+
+
+
+/*portfolio-꾸밈이미지*/
+.portfolio .image img:nth-child(1) {position: absolute; top: 29%; right: 26%;}
+.portfolio .image img:nth-child(2) {position: absolute; top: 45%; left: 13%; width: 50px; rotate: 104deg;}
+.portfolio .image img:nth-child(3) {position: absolute; top: 46.3%; left: 35.6%; width: 16px;}
+.portfolio .image img:nth-child(4) {position: absolute; top: 61%; left: 21%; width: 20px; rotate: 70deg;}
+
+
+
+/* footer */
+footer {width: 100%; height: 530px; background: #FFECAE; position: relative;}
+footer h2 {padding: 230px 0 0 347px;}
+footer h2 span {color: #010A13;}
+footer .address {position: absolute; top: 60%; right: 15%; font-family: 'Gowun Dodum', sans-serif;}
+footer .address p {font-size: 28px; font-family: 'Gowun Dodum', sans-serif;}
+footer .address p:nth-child(2) {font-size: 23px;}
+footer .address li {display: inline-block;padding: 20px 10px; vertical-align:middle;}
+footer .address {border-bottom: 1px solid #707070; border-top: 1px solid #707070;}
+footer .address li::before {content: ''; border-bottom: 1px solid #707070; position: absolute;left: 1px; bottom: 47%; width: 420px;}
+
+
+/*footer-꾸밈이미지*/
+footer .image img:nth-child(1) {position: absolute; top:35%; left: 37%; width: 40px;}
+footer .image img:nth-child(2) {position: absolute; top:22.2%; right: 20%;}
+
+
+
+/* 꾸밈이미지 애니메이션 */
+@keyframes moveUpdown {
+	0% {margin-top: 15px;} 
+	100% {margin-top: 0px;}
+    }
+
+    .rstar {animation: moveUpdown 0.3s linear 0s infinite alternate; animation-duration: 0.7s;}
+    .ystar {animation: moveUpdown 0.3s linear 0s infinite alternate; animation-duration: 1s;}
+
+@keyframes rotate {
+        0% {rotate: (0deg);}
+        15%{transform: rotate(-15deg);}
+        30%{rotate: (0deg);}
+    }
+
+    .rzig {animation-name: rotate; animation-duration: 3s; animation-iteration-count: infinite;}
+    
+@keyframes rotate2 {
+        0% {rotate: (0deg);}
+        15%{transform: rotate(15deg);}
+        30%{rotate: (0deg);}
+    }
+    .yzig {animation-name: rotate2; animation-duration: 3s; animation-iteration-count: infinite;}
+
+    @keyframes jump {
+        0%   {transform: translate3d(-8%,0,0) ;}
+        40%  {transform: translate3d(0%,10%,0); transform: rotate(-5deg)}
+        100% {transform: translate3d(8%,0%,0);}
+    }
+    .cat3 {transform-origin: 50% 50%; animation: jump 2s linear alternate infinite;}
+
+
+
+
+    /* 텍스트 애니메이션 */
+@keyframes textAni {
+    0% {opacity: 0;}
+    30% {opacity: 0; transform: translate3d(0,10px,0) skewY(8deg); transform-origin: top left;}
+}
+
+h3.motion {animation-name: textAni; animation-duration: 1s;}
+
+
+@keyframes textAni2 {
+    0% {opacity: 0; }
+    30% {opacity: 0; transform: translate3d(0,40px,0) skewY(8deg); transform-origin: top left;}
+}
+
+.tit.motion b {transform:  translate3d(0,0,0) skewY(0deg); overflow: hidden; display: block; }
+.tit.motion b i {overflow: hidden; display: block; animation-name: textAni2; animation-duration: 1s;}
+
+@keyframes slide-up {
+    0% {opacity: 0; transform: translateY(100px);}
+    30% {opacity: 0; transform: translateY(100px);}
+}
+.portfolio .inner .txt p.motion {animation-name: slide-up; animation-duration: 0.8s;}
+.portfolio .inner .btn.motion {animation-name: slide-up; animation-duration: 0.8s;}

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sojeong's Portfolio_Gallery</title>
+
+    <link rel="stylesheet" href="css/style_gallery.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+
+    <!-- js -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/plugin/jquery.simplyscroll.min.js"></script>
+    <script src="js/plugin/splitting.min.js"></script>
+    <script src="js/plugin/slick.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/plugin/scrolla.jquery.min.js"></script>
+    <script src="js/plugin/slide.js"></script>
+    <script src="js/plugin/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    
+    <!-- 부드러운스크롤 -->
+    <script src="http://fatlinesofcode.github.io/jquery.smoothwheel/src/jquery.smoothwheel.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("body").smoothWheel()
+        });
+    </script>
+
+    <!-- design.slide -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+
+</head>
+<body>
+    <div class="wrap">
+        
+     <!-- Top 버튼 -->
+     <div> 
+        <a href="#" class="btn_gotop">
+          <img src="img/top.png" style="width:120px"> 
+        </a>
+    </div>
+
+    <!-- 메뉴오픈 -->
+    <div class="menuOpen">
+        <button class="open">
+        <img src="img/gnb.png" alt="메뉴열기" class="gnb">
+        <img src="img/gnb2.png" alt="메뉴열기" class="gnb2">
+        </button>
+        <div class="menuWrap">
+            <a href="#" class="close"><img src="img/close.png" width="50px" alt=""></a>
+            <ul>
+                <li><a href="index.html"><span><b>Home</b></span></a></li>
+                <li><a href="about.html"><span><b>About</b></span></a></li>
+                <li><a href="gallery.html"><span><b>Gallery</b></span></a></li>
+                <li><a href="portfolio.html"><span><b>Portfolio</b></span></a></li>
+            </ul>
+        </div>
+    </div>
+    
+    
+    <!-- header -->
+    <header>
+        <div class="innerHeader">
+            <ul class="gnb">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><img src="img/Logoside.png" alt="Logoside" width="80px"></li>
+                <li><a href="index.html"><img src="img/Logo_black.png" alt="Logo"></a></li>
+                <li><img src="img/Logoside.png" alt="Logoside" width="80px"></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+        </div>            
+    </header>
+
+    <!-- clone -->
+    <div class="clone">
+        <!--꾸밈이미지-->
+        <div class="image">
+            <img src="img/star_red.png" alt="빨간별" class="rstar">
+            <img src="img/zigzag_red.png" alt="빨간지그재그" class="rzig">
+            <img src="img/star_yellow.png" alt="노란별" class="ystar">
+            <img src="img/zigzag_red.png" alt="빨간지그재그" class="rzig">
+            <img src="img/star_black.png" alt="검은별" class="bstar">
+            <img src="img/zigzag_yellow.png" alt="노란지그재그" class="yzig">
+            <img src="img/star_red.png" alt="빨간별" class="rstar">
+            <img src="img/zigzag_black.png" alt="검은지그재그" class="bzig">
+            <img src="img/star_yellow.png" alt="노란별" class="ystar">
+
+        </div>
+        <div class="topText">
+            <h2 class="tit animate" data-animate="motion"><b><i><img src="img/mirror.png" width="110px" alt=""><span>CLONE CODING</span></i></b></h2>
+            <p class="animate" data-animate="motion">저의 코딩 능력을 이용해 기존 사이트를 <br>
+            동일하게 재현한 작업물입니다.</p>
+        </div>
+
+       
+        <div class="inner">
+            <ul>
+                <li class="form1 right">
+                    <div class="txt">
+                        <h3 class="animate" data-animate="motion">MUSIGN</h3>
+                         <a href="#" onclick="window.open('gallery/musign/index.html', '_blank','width=1920 height=1080')"><span>PC</span></a>
+                         <a href="#" onclick="window.open('gallery/musign/index.html', '_blank','width=820 height=1080')"><span>TABLET</span></a>
+                         <a href="#" onclick="window.open('gallery/musign/index.html', '_blank','width=375 height=1080')"><span>MOBILE</span></a>
+                    </div>
+                    <div class="img">
+                       <a href="#" onclick="window.open('gallery/musign/index.html', '_blank','width=1920 height=1080')"><img src="img/gal_musign.png" alt=""></a>
+                    </div>
+                </li>
+
+                <li class="form2 left">
+                    <div class="img">
+                        <a href="#" onclick="window.open('gallery/phomein/index.html', '_blank','width=1920 height=1080')" class="img"><img src="img/gal_phomein.png" alt=""></a>
+                     </div>
+                    <div class="txt">
+                        <h3 class="animate" data-animate="motion">PHOMEIN</h3>
+                        <a href="#" onclick="window.open('gallery/phomein/index.html', '_blank','width=1920 height=1080')"><span>PC</span></a>
+                        <a href=""><span>TABLET</span></a>
+                        <a href=""><span>MOBILE</span></a>
+                    </div>
+                </li>
+
+                <li class="form3 right"> 
+                    <div class="txt">
+                       <h3 class="animate" data-animate="motion">DOPDA</h3>
+                       <a href="#" onclick="window.open('gallery/dopda/index.html', '_blank','width=1920 height=1080')"><span>PC</span></a>
+                       <a href="#" onclick="window.open('gallery/dopda/index.html', '_blank','width=820 height=1080')"><span>TABLET</span></a>
+                       <a href="#" onclick="window.open('gallery/dopda/index.html', '_blank','width=375 height=1080')"><span>MOBILE</span></a>
+                    </div>
+                    <div class="img">
+                       <a href="#" onclick="window.open('gallery/dopda/index.html', '_blank','width=1920 height=1080')" class="img"><img src="img/gal_dopda.png" alt=""></a>
+                    </div>
+                </li>
+
+                <li class="form1 left">
+                    <div class="img">
+                        <a href="#" onclick="window.open('gallery/ystudio/index.html', '_blank','width=1920 height=1080')" class="img"><img src="img/gal_Ystudio.png" alt=""></a>
+                     </div>
+                    <div class="txt">
+                      <h3 class="animate" data-animate="motion">Ystudio</h3>
+                      <a href="#" onclick="window.open('gallery/ystudio/index.html', '_blank','width=1920 height=1080')"><span>PC</span></a>
+                      <a href="#" onclick="window.open('gallery/ystudio/index.html', '_blank','width=820 height=1080')"><span>TABLET</span></a>
+                      <a href="#" onclick="window.open('gallery/ystudio/index.html', '_blank','width=375 height=1080')"><span>MOBILE</span></a>
+                    </div>
+                </li>
+
+                <li class="form2 right">
+                    <div class="txt">
+                       <h3 class="animate" data-animate="motion">CREW A LA MODE</h3>
+                       <a href="#" onclick="window.open('gallery/crewalamode/index.html', '_blank','width=1920 height=1080')"><span>PC</span></a>
+                       <a href="#" onclick="window.open('gallery/crewalamode/index.html', '_blank','width=820 height=1080')"><span>TABLET</span></a>
+                       <a href="#" onclick="window.open('gallery/crewalamode/index.html', '_blank','width=375 height=1080')"><span>MOBILE</span></a>
+                    </div>
+                    <div class="img">
+                      <a href="#" onclick="window.open('gallery/crewalamode/index.html', '_blank','width=1920 height=1080')" class="img"><img src="img/gal_crewalamode.png" alt="">
+                      </a>
+                    </div>
+                </li>
+
+                <li class="form3 left">
+                    <div class="img">
+                        <a href="#" onclick="window.open('gallery/daebang/index.html', '_blank','width=1920 height=1080')" class="img"><img src="img/gal_daebang.png" alt=""></a>
+                     </div>
+                    <div class="txt">
+                        <h3 class="animate" data-animate="motion">대방</h3>
+                        <a href="#" onclick="window.open('gallery/daebang/index.html', '_blank','width=1920 height=1080')"><span>PC</span></a>
+                        <a href=""><span>TABLET</span></a>
+                        <a href=""><span>MOBILE</span></a>
+                    </div>
+                </li>
+
+                <li class="form1 right">
+                    <div class="txt">
+                    <h3 class="animate" data-animate="motion">한화케미칼</h3>
+                    <a href="#" onclick="window.open('gallery/hanhwa/index.html', '_blank','width=1920 height=1080')"><span>PC</span></a>
+                    <a href="#" onclick="window.open('gallery/hanhwa/index.html', '_blank','width=820 height=1080')"><span>TABLET</span></a>
+                    <a href="#" onclick="window.open('gallery/hanhwa/index.html', '_blank','width=375 height=1080')"><span>MOBILE</span></a>
+                    </div>
+                    <div class="img">
+                       <a href="#" onclick="window.open('gallery/hanhwa/index.html', '_blank','width=1920 height=1080')" class="img"><img src="img/gal_hanhwa.png" alt=""></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- renewal -->
+    <div class="renewal mySwiper" data-color="#F4D35E">
+
+        <div class="topText">
+            <h2 class="tit animate" data-animate="motion"><b><i><img src="img/renewal.png" width="110px" alt=""><span>RENEWAL</span></i></b></h2>
+            <p class="animate" data-animate="motion">사이트의 문제점을 저만의 방식으로 개선해<br>
+            리뉴얼한 작업물입니다.</p>
+        </div>
+    
+    <div class="inner">
+
+        <ul>
+            <li class="form2 right">
+                <div class="txt">
+                    <h3 class="animate" data-animate="motion">카카오 엔터프라이즈</h3>
+                    <a href="#" onclick="window.open('gallery/kakao/index.html', '_blank','width=1920 height=1080')"><span>PC</span></a>
+                    <a href="#" onclick="window.open('gallery/kakao/index.html', '_blank','width=820 height=1080')"><span>TABLET</span></a>
+                    <a href="#" onclick="window.open('gallery/kakao/index.html', '_blank','width=375 height=1080')"><span>MOBILE</span></a>
+                </div>
+                <div class="img">
+                   <a href="#"><img src="img/gal_soon1.png" alt=""></a>
+                </div>
+            </li>
+
+            <li class="form3 left">
+                <div class="img">
+                    <a href="#" class="img"><img src="img/gal_soon1.png" alt=""></a>
+                 </div>
+                <div class="txt">
+                    <h3 class="animate" data-animate="motion">대한항공</h3>
+                    <a href=""><span>PC</span></a>
+                    <a href=""><span>TABLET</span></a>
+                    <a href=""><span>MOBILE</span></a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    </div>
+
+    <!-- design -->
+    <div class="design">
+        <div class="topText">
+            <h2 class="tit animate" data-animate="motion"><b><i><img src="img/design.png" width="90px" alt=""><span>DESIGN</span></i></b></h2>
+            <p class="animate" data-animate="motion">포토샵, 일러스트,XD 등을 활용해 직접 디자인한 작업물입니다.</p>
+        </div>
+        <div class="inner">
+            <ul class="list">
+                <li class="a"><img src="img/gal_design0.png" alt=""></li>
+                <li class="c"><img src="img/gal_design.png" alt=""></li>
+                <li class="a"><img src="img/gal_design2.png" alt=""></li>
+                <li class="c"><img src="img/gal_design3.png" alt=""></li>
+                <li class="b"><img src="img/gal_design4.png" alt=""></li>
+                <li class="c"><img src="img/gal_design5.png" alt=""></li>
+                <li class="a"><img src="img/gal_design6.png" alt=""></li>
+                <li class="b"><img src="img/gal_design7.png" alt=""></li>
+                <li class="a"><img src="img/gal_design8.png" alt=""></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- text-slide -->
+    <div class="slide">
+        <div class="text">
+            <p>SOJEONG'S<span>PORTFOLIO</span>SOJEONG'S<span>PORTFOLIO</span>SOJEONG'S<span>PORTFOLIO</span>SOJEONG'S<span>PORTFOLIO</span>SOJEONG'S<span>PORTFOLIO</span>SOJEONG'S<span>PORTFOLIO</span>SOJEONG'S<span>PORTFOLIO</span>SOJEONG'S<span>PORTFOLIO</span>SOJEONG'S<span>PORTFOLIO</span></p>
+        </div>
+    </div>
+
+    <!-- etc-->
+    <div class="etc">
+        <div class="inner">
+                <div class="txt">
+                    <div class="fix">
+                    <h2><img src="img/mirror.png" width="110px" alt=""><span>ETC</span></h2>
+                    <p>제가 방송 및 유튜브 콘텐츠 PD로 근무할 때 <br>
+                    직접 촬영, 편집했던 작업물의 일부입니다. <br>
+                    </p>
+                    </div>
+                </div>
+                <ul class="right">
+                    <li>
+                        <div class="txtBox">
+                        <p><br>SBS 생방송투데이</p>
+                        <p>"협찬, 랭킹맛집,<br>
+                        우리동네 반찬가게"</p>
+                        </div>
+                        <video src="video/livetoday.mp4" autoplay muted loop></video>
+                    </li>
+                    <li>
+                        <div class="txtBox2">
+                        <p><br><br>유튜브 콘텐츠</p>
+                        <p>"허강조류"</p>
+                        </div>
+                        <video src="video/dance.mp4" autoplay muted loop width="600px" height="400px"></video>
+                    </li>
+                    <li>
+                        <div class="txtBox3">
+                        <p><br><br>유튜브 콘텐츠</p>
+                        <p>"내일출근안해"</p>
+                        </div>
+                        <video src="video/tomorrow.mp4" autoplay muted loop width="600px" height="400px"></video>
+                    </li>
+                    <li>
+                        <div class="txtBox4">
+                        <p><br><br>유튜브 콘텐츠</p>
+                        <p>"빌리퀸"</p>
+                        </div>
+                        <video src="video/billiqueen.mp4" autoplay muted loop width="600px" height="400px"></video>
+                    </li>
+                    <li>
+                        <div class="txtBox5">
+                        <p><br><br>유튜브 콘텐츠</p>
+                        <p>"상남자"</p>
+                        </div>
+                        <video src="video/brother.mp4" autoplay muted loop width="600px" height="400px"></video>
+                    </li>
+                    <li>
+                        <div class="txtBox6">
+                        <p><br><br>기업홍보영상</p>
+                        <p>"로비고스"</p>
+                        </div>
+                        <video src="video/rovigos.mp4" autoplay muted loop width="600px" height="400px"></video>
+                    </li>
+                </ul>           
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <!--꾸밈이미지-->
+        <div class="image">
+            <img src="img/star_red.png" alt="빨간별1" class="rstar">
+            <img src="img/CAT3.png" alt="고양이3" class="cat3">
+        </div>
+        <div class="text">
+            <h2 class="tit animate" data-animate="motion"><b><i><span>CONTACT</span></i></b></h2>
+        <ul class="address">
+            <ul>
+                <li><img src="img/mail.png" alt=""></li>
+                <li><p>E-mail</p></li>
+                <li><p>isojeong@nate.com</p></li>
+            </ul>
+            <ul>
+                <li><img src="img/phone-call.png" alt=""></li>
+                <li><p>연락처</p></li>
+                <li><p>010-2252-1470</p></li>
+            </ul>
+        </ul>
+        </div>
+    </footer>
+
+    </div>
+
+<script>
+    // 스와이퍼 백그라운드 컬러변경
+    gsap.utils.toArray(".mySwiper").forEach(function(bg){
+          var color = bg.getAttribute('data-color');
+      
+          ScrollTrigger.create({
+              trigger: bg,
+              start: 'top center',
+              end: 'bottom center',
+              scrub:true,
+              onEnter: () => gsap.to('.renewal',{ //onEnter- 스크롤 위치가 '시작'을 지나 앞으로 이동할 때
+                  backgroundColor: color,
+                  duration:1
+              }),
+              onLeave: () => gsap.to('.renewal',{//onEnterBack - 스크롤 위치가 '끝'을 지나 앞으로 이동할 때
+                  backgroundColor: '#FFECAE',
+                  duration: 1
+              }),
+              onEnterBack: () => gsap.to('.renewal',{//onEnterBack - 스크롤 위치가 '끝'을 지나 뒤로 이동할 때
+                  backgroundColor: color,
+                  duration: 1
+              }),
+              onLeaveBack: () => gsap.to('.renewal',{//onLeaveBack => 스크롤 위치가 '시작'을 지나 뒤로 이동할 때
+                  backgroundColor: '#FFECAE',
+                  duration: 1,
+              }),
+
+          });
+      });
+</script>
+    
+
+</body>
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sojeong's Portfolio</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+
+
+
+    <!-- js -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/plugin/jquery.simplyscroll.min.js"></script>
+    <script src="js/plugin/slick.min.js"></script>
+    <script src="js/plugin/scrolla.jquery.min.js"></script>
+    <script src="js/plugin/splitting.min.js"></script>
+    <script src="js/plugin/slide.js"></script>
+    <script src="js/plugin/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <!-- 부드러운스크롤 -->
+    <script src="http://fatlinesofcode.github.io/jquery.smoothwheel/src/jquery.smoothwheel.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("body").smoothWheel()
+        });
+    </script>
+
+</head>
+
+<body>
+<div class="wrap">
+
+    <!-- Top 버튼 -->
+    <div> 
+        <a href="#" class="btn_gotop">
+          <img src="img/top.png" style="width:120px"> 
+        </a>
+    </div>
+
+    <!-- 메뉴오픈 -->
+    <div class="menuOpen">
+        <button class="open">
+        <img src="img/gnb.png" alt="메뉴열기" class="gnb">
+        <img src="img/gnb2.png" alt="메뉴열기" class="gnb2">
+        </button>
+        <div class="menuWrap">
+            <a href="#" class="close"><img src="img/close.png" width="50px" alt=""></a>
+            <ul>
+                <li><a href="index.html"><span><b>Home</b></span></a></li>
+                <li><a href="about.html"><span><b>About</b></span></a></li>
+                <li><a href="gallery.html"><span><b>Gallery</b></span></a></li>
+                <li><a href="portfolio.html"><span><b>Portfolio</b></span></a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- header -->
+    <header>
+        <div class="innerHeader">
+            <ul class="gnb">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><img src="img/Logoside.png" alt="Logoside" width="80px"></li>
+                <li><a href="index.html"><img src="img/Logo_black.png" alt="Logo"></a></li>
+                <li><img src="img/Logoside.png" alt="Logoside" width="80px"></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+        </div>
+        
+    </header>
+
+    <!-- visual -->
+    <section class="visual">
+        <div class="inner">
+            <!--꾸밈이미지-->
+            <img src="img/star_yellow.png" alt="노란별1" class="ystar">
+            <img src="img/star_yellow.png" alt="노란별1" class="ystar">
+            <img src="img/zigzag_red.png" alt="빨간지그재그" class="rzig">
+            <img src="img/zigzag_yellow.png" alt="노란지그재그" class="yzig">
+            <img src="img/star_red.png" alt="빨간별1" class="rstar">
+
+            <img src="img/CAT1-2.png" alt="cat1" class="cat1">
+            <img src="img/Cat2.png" alt="cat2" class="cat2">
+
+            <img src="img/ME.png" alt="" class="me animate" data-animate="motion">
+            <img src="img/ME22.png" alt="" class="me2 animate" data-animate="motion">
+
+            <img src="img/fishes.png" alt="" class="fish">
+
+            <div class="text">
+              <p>Hello :)</p>
+              <h1 class="animate" data-animate="motion"><span>Welcome</span> to <br>
+                My <span>Portfolio</span>.</h1>
+            </div>
+            <img src="img/visual_circle.png" class="scroll" alt="">
+        </div>
+    </section>
+
+    <!-- text-slide -->
+    <div class="slide">
+        <div class="text">
+            <p>SOJEONG'S<span>PORTFOLIO</span>SOJEONG'S<span>PORTFOLIO</span>SOJEONG'S<span>PORTFOLIO</span>SOJEONG'S<span>PORTFOLIO</span>SOJEONG'S<span>PORTFOLIO</span>SOJEONG'S<span>PORTFOLIO</span>SOJEONG'S<span>PORTFOLIO</span>SOJEONG'S<span>PORTFOLIO</span>SOJEONG'S<span>PORTFOLIO</span></p>
+        </div>
+    </div>
+
+    <!-- section.about-->
+    <section class="about">
+        <!--꾸밈이미지-->
+        <div class="image">
+            <img src="img/star_red.png" alt="빨간별1" class="rstar">
+            <img src="img/star_yellow.png" alt="노란별1" class="ystar">
+            <img src="img/zigzag_yellow.png" alt="노란지그재그" class="yzig">
+            <img src="img/zigzag_red.png" alt="빨간지그재그" class="rzig">
+            <img src="img/star_red.png" alt="빨간별1" class="rstar">
+        </div>
+        <h2 class="tit animate" data-animate="motion"><b><i><span>ABOUT</span> ME</i></b></h2>
+        <div class="inner">
+            <p class="img animate" data-animate="motion"><img src="img/about_photo_1.png" width=450px alt="내 사진"></p>
+            <div class="textBox animate" data-animate="motion">
+              <p class="hello">
+                안녕하세요! <br>
+                저는 <span>견고한 UI</span> 와<span> 기억에 남는 UX</span>를 만들기 위해 <br>
+                끊임없이 노력하고 성장하는 <span class="name">이소정</span>입니다.
+              </p>
+              <p class="birth">
+                1994. 04. 26 <br>
+                서울 서초구 <br>
+                <b>T.</b> 010-2252-1470 <br>
+                <b>M.</b> isojeong@nate.com</p>
+                <a class="btn" href="about.html">> 더 알아보기</a>
+           </div>
+            
+
+        </div>
+    </section>
+
+    <!-- skills -->
+    <div class="skills">
+        <p><b>SKILLS</b></p>
+        <img src="img/zigzagL_red.png" alt="">
+        <ul class="sliding">
+            <li><img src="img/html.png" alt=""></li>
+            <li><img src="img/css.png" alt=""></li>
+            <li><img src="img/java-script.png" alt=""></li>
+            <li><img src="img/figma.png" alt=""></li>
+            <li><img src="img/photoshop.png" alt=""></li>
+            <li><img src="img/illustrator.png" alt=""></li>
+            <li><img src="img/xd.png" alt=""></li>
+            <li><img src="img/premiere-pro.png" alt=""></li>
+            <li><img src="img/after-effects.png" alt=""></li>
+            <li><img src="img/edius.png" alt=""></li>
+            <li><img src="img/excel.png" alt=""></li>
+            <li><img src="img/word.png" alt=""></li>
+            <li><img src="img/powerpoint.png" alt=""></li>
+        </ul>
+    </div>
+
+    <!-- gallery -->
+    <div class="gallery">
+        <!--꾸밈이미지-->
+        <div class="image">
+            <img src="img/star_yellow.png" alt="노란별1" class="ystar">
+            <img src="img/zigzag_red.png" alt="빨간지그재그" class="rzig">
+            <img src="img/star_red.png" alt="빨간별1" class="rstar">
+            <img src="img/zigzag_red.png" alt="빨간지그재그" class="rzig">
+            <img src="img/star_red.png" alt="빨간별1" class="rstar">
+            <img src="img/star_yellow.png" alt="노란별1" class="ystar">
+            <img src="img/zigzagL_red.png" alt="빨간지그재그2" class="rzig2">
+        </div>
+        <h2 class="tit animate" data-animate="motion"><b><i><span>GALLERY</span></i></b></h2>
+        <div class="text animate" data-animate="motion">
+            <p class="txt">지금껏 제가 노력해온 결과물을 보여드립니다.</p><br>
+            <p class="ex"> # RESPONSIBILITY <br>
+                           # CLONE CODING <br>
+                           # RENEWAL <br>
+                           # DESIGN </p>
+        </div>
+        <div class="clone animate" data-animate="motion">
+            <a href="gallery.html"><img src="img/home_clone.png" width="500px" alt=""></a>
+            <p class="button"><a href="gallery.html">자세히 보기</a></p>         
+            <div class="txt">                
+                <p class="tit"><img src="img/mirror.png" width="140px" alt="">CLONE CODING</p>
+                <p>저의 코딩 능력을 이용해 기존 사이트를 <br>
+                   동일하게 재현한 작업물입니다.</p>
+            </div>
+        </div>
+        <div class="renewal animate" data-animate="motion">
+            <a href="gallery.html"><img src="img/Home-gal2.png" width="500px" alt=""></a>
+            <p class="button"><a href="gallery.html">자세히 보기</a></p>
+            <div class="txt">                
+                <p class="tit"><img src="img/renewal.png" width="130px" alt=""> RENEWAL</p>
+                <p> 사이트의 문제점을 저만의 방식으로 개선해 <br>
+                    리뉴얼한 작업물입니다.</p>
+            </div>
+        </div>
+        <div class="design animate" data-animate="motion">
+            <a href="gallery.html"><img src="img/Home-gal3.png" width="500px" alt=""></a>
+            <p class="button"><a href="gallery.html">자세히 보기</a></p>
+            <div class="txt">                
+                <p class="tit"><img src="img/design.png" width="100px" alt=""> DESIGN</p>
+                <p> 포토샵, 일러스트 등을 활용해 직접 디자인한 작업물입니다.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- PORTFOLIO -->
+    <div class="portfolio">
+        <!--꾸밈이미지-->
+        <div class="image">
+            <img src="img/star_yellow.png" alt="노란별1" class="ystar">
+            <img src="img/zigzag_yellow.png" alt="노란지그재그" class="yzig">
+            <img src="img/star_red.png" alt="빨간별1" class="rstar">
+            <img src="img/zigzag_red.png" alt="빨간지그재그" class="rzig">
+        </div>
+        <div class="inner">
+            <div class="txt">
+                <h2 class="tit animate" data-animate="motion"><b><i><span>PORTFOLIO</span></i></b></h2>
+                <p class="animate" data-animate="motion">NCS Process</p>        
+            </div>
+            <a class="btn animate" data-animate="motion" href="portfolio.html">> 더 알아보기</a>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="ppt/UI구현_이소정.pdf" onclick="window.open(this.href,'','width=800, height=400'); return false"><img src="img/cover_guhyun.png" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="ppt/UI테스트_이소정.pdf" onclick="window.open(this.href,'','width=1200, height=800'); return false"><img src="img/cover_test.png" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="ppt/UIUX 요구분석_이소정.pdf" onclick="window.open(this.href,'','width=1200, height=800'); return false"><img src="img/cover_bunsuk.png" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="ppt/UIUX콘셉트 기획_이소정.pdf" onclick="window.open(this.href,'','width=1200, height=800'); return false"><img src="img/cover_concept.png" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="ppt/UIUX아키텍처 설계_이소정.pdf" onclick="window.open(this.href,'','width=1200, height=800'); return false"><img src="img/cover_archi.png" alt=""></a>
+                    </div> 
+                    <div class="swiper-slide">
+                        <a href="ppt/프로그래밍언어활용_이소정.pdf" onclick="window.open(this.href,'','width=1200, height=800'); return false"><img src="img/cover_programing.jpg" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="ppt/프로그래밍언어활용_이소정.pdf" onclick="window.open(this.href,'','width=1200, height=800'); return false"><img src="img/cover_react.jpg" alt=""></a>
+                    </div>
+                                     
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- text-slide2 -->
+    <div class="slide">
+        <div class="text">
+            <p>SOJEONG'S<span>PORTFOLIO</span>SOJEONG'S<span>PORTFOLIO</span>SOJEONG'S<span>PORTFOLIO</span>SOJEONG'S<span>PORTFOLIO</span>SOJEONG'S<span>PORTFOLIO</span>SOJEONG'S<span>PORTFOLIO</span>SOJEONG'S<span>PORTFOLIO</span>SOJEONG'S<span>PORTFOLIO</span>SOJEONG'S<span>PORTFOLIO</span></p>
+        </div>
+    </div>
+    
+    <!-- footer -->
+    <footer>
+        <!--꾸밈이미지-->
+        <div class="image">
+            <img src="img/star_red.png" alt="빨간별1" class="rstar">
+            <img src="img/CAT3.png" alt="고양이3" class="cat3">
+        </div>
+        <div class="text">
+            <h2 class="tit animate" data-animate="motion"><b><i><span>CONTACT</span></i></b></h2>
+        <ul class="address">
+            <ul>
+                <li><img src="img/mail.png" alt=""></li>
+                <li><p>E-mail</p></li>
+                <li><p>isojeong@nate.com</p></li>
+            </ul>
+            <ul>
+                <li><img src="img/phone-call.png" alt=""></li>
+                <li><p>연락처</p></li>
+                <li><p>010-2252-1470</p></li>
+            </ul>
+        </ul>
+        </div>
+    </footer>
+
+</div>
+
+
+
+<script>
+    //1. swiper
+    var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1.5, //보여지는 갯수
+    spaceBetween: 30, //각각 간격
+    centeredSlides: true, //센터모드
+    loop: false, //루프
+    navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+      },
+    responsive: [ // 반응형 웹 구현 옵션
+    {  
+      breakpoint: 1600, // 화면 사이즈 1600px
+      settings: { // 반응형시 위와 다르게 변경할 옵션 추가
+      slidesToShow:1
+      }
+    }
+    ]
+    });
+
+    
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,336 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Rajdhani:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gowun+Dodum&family=Rajdhani:wght@400;500&display=swap');
+
+/* reset */
+* {margin: 0;padding: 0;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 700; font-size: inherit;}
+a {color: inherit; text-decoration: inherit;}
+img {vertical-align: middle;}
+a img {border: none;}
+li {list-style: none;}
+address, em, i {font-style: normal;}
+a:focus {outline: none}
+button:focus {outline: none}
+
+
+/* Layout */
+body {font-family: 'Noto Sans KR', sans-serif; color: #333333;}
+.wrap {width: 100%; overflow: hidden;margin: 0 auto; position: relative; line-height: 1.2;}
+.en {font-family: 'Rajdhani', sans-serif;}  /* 메인 텍스트 영어폰트 */
+h2,p {font-family: 'Rajdhani', sans-serif; font-size: 110px;}
+span {color:#E21E2F; font-weight: bold;}
+
+/* Top 버튼 */
+.btn_gotop {position:fixed; bottom:35px; right:20px; z-index:99;display: none;}
+
+
+/* menuOpen */
+.menuOpen button.open {background: none; border: none; position: fixed; z-index: 100; right: 50px; top: 50%; transform: translateY(-50%); padding: 30px 22px; box-sizing: border-box;}
+.menuOpen button.open .gnb2 {width: 80px; position: absolute; opacity: 0; top: 30px; right: 26px;}
+.menuOpen button.open img {width: 80px;}
+.menuOpen button.open:hover .gnb2 {opacity: 1; cursor: pointer;}
+.menuOpen button.open:hover .gnb {opacity: 0;}
+
+/* menuWrap */
+.menuOpen .menuWrap {width: 50%; height: 100vh; position: fixed; top: 0; right: 0; z-index: 100; background: #F4D35E;}
+.menuOpen .menuWrap ul {color: #1E1D1C; position: absolute; top: 50%; transform: translateY(-50%); left: 25%; font-size: 90px; font-family: 'Rajdhani', sans-serif;}
+.menuOpen .menuWrap ul li a {margin-bottom: 20px; display: inline-block; position: relative; transition: all 0.3s;}
+.menuOpen .menuWrap ul li a:hover, .menuOpen .menuWrap .tit li a:focus {transform: translateX(30px); color: #E21E2F; transition: all 0.3s;}
+.menuOpen .menuWrap ul li a:hover:after, .menuOpen .menuWrap .tit li a:focus:after {width: 100%;}
+.menuOpen .menuWrap .close {position: absolute; right: 50px; top: 50px;}
+
+.menuOpen .menuWrap {width: 0; transition: 0; overflow: hidden; opacity: 0;}
+.menuOpen .menuWrap span {color: #1E1D1C;}
+.menuOpen .menuWrap span:hover {color: #E21E2F; transition: all 0.2s;}
+.menuOpen .menuWrap.on {width: 30%; right: 0; transform: skewY(0deg);  transition: 0.5s; opacity: 1;}
+.menuOpen .menuWrap .tit {display: none; }
+.menuOpen .menuWrap.on .tit {display: block;}
+
+/* header */
+header {width: 100%; height: 130px; background: #FFFBEE;}
+.innerHeader {padding: 0 250px; height: 130px;}
+.innerHeader .gnb {width: 100%; display: flex; font-family: 'Rajdhani', sans-serif; font-size: 25px; justify-content: space-between; line-height: 130px;}
+.innerHeader .gnb li:nth-child(1):hover,.innerHeader .gnb li:nth-child(2):hover, .innerHeader .gnb li:nth-child(6):hover, .innerHeader .gnb li:nth-child(7):hover {font-weight: bold; color: #E21E2F ; transition: all 0.2s;}
+
+/* clone */
+.clone {width: 100%; height: 4100px; position: relative; background: #FFFBEE;}
+.clone .topText {margin-bottom: 50px; padding: 140px 0 70px 135px;}
+.clone .topText h2 img {vertical-align: bottom;}
+.clone .topText h2 {font-size: 90px;}
+.clone .topText p {font-size: 20px; font-family: 'Noto Sans KR', sans-serif; font-weight: 300; padding-left:115px;}
+.clone .inner {width: 1400px; margin: 0 auto; }
+.clone .inner ul {width: 100%;}
+.clone .inner ul li {display: flex; justify-content: space-between; margin-bottom: 120px; width: 69%; }
+.clone .inner ul .right .txt {width: 37%; margin-top: 200px; text-align: right;}
+.clone .inner ul .left .txt {width: 37%; margin-top: 200px; text-align: left;}
+.clone .inner ul li .txt h3 {font-size: 35px; color: #1E1D1C;margin-bottom: 30px;}
+.clone .inner ul li .txt span {font-size: 17px; font-weight: 400;}
+.clone .inner ul .form1 .txt span {display: inline-block; background: #F4D35E; width: 90px;color: #fff; padding: 8px 0; border-radius: 30px; margin-right: 10px; text-align: center; transition: all 0.1s;}
+.clone .inner ul .form1 .txt span:hover {background: #aa9136;}
+.clone .inner ul .form2 .txt span {display: inline-block; background: #E21E2F; width:90px;color: #fff; padding: 8px 0; border-radius: 30px; margin-right: 10px; text-align: center;transition: all 0.1s;}
+.clone .inner ul .form2 .txt span:hover {background: #6d282e;}
+.clone .inner ul .form3 .txt span {display: inline-block; background: #010A13; width: 90px;color: #fff; padding: 8px 0; border-radius: 30px; margin-right: 10px; text-align: center;transition: all 0.1s;}
+.clone .inner ul .form3 .txt span:hover {background: #062e57;}
+.clone .inner ul li.right {float: right;}
+
+/* clone-꾸밈이미지 */
+.clone .image img:nth-child(1) {position: absolute; top: 3.3%;left: 11.5%; width: 25px;}
+.clone .image img:nth-child(2) {position: absolute; top: 7.3%;left: 26%; width: 35px;}
+.clone .image img:nth-child(3) {position: absolute; top: 14.6%;left: 55%; width: 25px;}
+.clone .image img:nth-child(4) {position: absolute; top: 26.8%;left: 43.7%; width: 35px; rotate: -12deg;}
+.clone .image img:nth-child(5) {position: absolute; top: 38.9%;left: 46.7%; width: 25px; rotate: -12deg;}
+.clone .image img:nth-child(6) {position: absolute; top: 52.4%;left: 51.6%; width: 25px; rotate: -70deg;}
+.clone .image img:nth-child(7) {position: absolute; top: 63%;left: 55.1%; width: 25px; }
+.clone .image img:nth-child(8) {position: absolute; top: 75.5%;left: 46.1%; width: 35px; rotate: 0deg;}
+.clone .image img:nth-child(9) {position: absolute; top: 87.5%;left: 44.4%; width: 25px; rotate: 0deg;}
+
+
+/* renwal */
+.renewal {width: 100%; height: 1650px; position: relative; background: #FFFBEE;}
+.renewal .topText {margin-bottom: 50px; padding: 220px 0 70px 130px;}
+.renewal .topText h2 img {vertical-align: bottom; margin-right: 10px;}
+.renewal .topText h2 {font-size: 90px;}
+.renewal .topText p {font-size: 20px; font-family: 'Noto Sans KR', sans-serif; font-weight: 300; padding-left:125px;}
+.renewal .inner {width: 1400px; margin: 0 auto; }
+.renewal .inner ul {width: 100%;}
+.renewal .inner ul li {display: flex; justify-content: space-between; margin-bottom: 120px; width: 69%; }
+.renewal .inner ul .right .txt {width: 37%; margin-top: 200px; text-align: right;}
+.renewal .inner ul .left .txt {width: 37%; margin-top: 200px; text-align: left;}
+.renewal .inner ul li .txt h3 {font-size: 35px; color: #1E1D1C;margin-bottom: 30px;}
+.renewal .inner ul li .txt span {font-size: 17px; font-weight: 400;}
+.renewal .inner ul .form2 .txt span {display: inline-block; background: #E21E2F; width:90px;color: #fff; padding: 8px 0; border-radius: 30px; margin-right: 10px; text-align: center;transition: all 0.1s;}
+.renewal .inner ul .form2 .txt span:hover {background: #6d282e;}
+.renewal .inner ul .form3 .txt span {display: inline-block; background: #010A13; width: 90px;color: #fff; padding: 8px 0; border-radius: 30px; margin-right: 10px; text-align: center;transition: all 0.1s;}
+.renewal .inner ul .form3 .txt span:hover {background: #062e57;}
+.renewal .inner ul li.right {float: right;}
+
+/* renwal 꾸밈 이미지 */
+
+
+
+
+/* design */
+.design {width: 100%; height: 1250px; background: #fff; position: relative; overflow: hidden;}
+.design .topText {margin-top: 220px;text-align: center;}
+.design .topText h2 img {vertical-align: text-top; margin-right: 25px;}
+.design .topText h2 {font-size: 90px;}
+.design .topText p {font-size: 20px; font-family: 'Noto Sans KR', sans-serif; font-weight: 300;}
+.design .inner {width: 100%; height: 700px;}
+.design .inner ul.list {display: flex; flex-wrap: nowrap; position: relative; padding: 10% 7% 15% 15%; box-sizing: border-box;}
+.design .inner ul li {flex-shrink: 0 !important; width: 400px; height: 500px; border-radius: 3px; position: relative;}
+.design .inner ul li.a {transform: rotate(-20deg);}
+.design .inner ul li.b {transform: rotate(-10deg);}
+.design .inner ul li.c {transform: rotate(10deg);}
+
+
+
+/* text-slide */
+.slide {position: relative; background: #FFECAE; width: 100vw; max-width: 100%;height: 200px; overflow: hidden;line-height: 200px;}
+.slide .text {font-family: 'Rajdhani', sans-serif; font-size: 70px; position: absolute; white-space: nowrap; will-change: transform; animation: slide 60s linear infinite;}
+
+@keyframes slide {
+    from {transform: translateX(0);}
+    to {transform: translateX(-50%);}
+}
+
+/* etc */
+.etc {width: 100%; height: 100%; position: relative; padding: 250px 0; overflow: hidden; background: #FFFBEE;}
+.etc .inner {width: 85%; margin: 0 auto; display: flex; justify-content: space-between; padding: 50px 0;}
+.etc .inner .txt {width: 50%; height: 100%; position: relative; top: 50%;
+left: 100px;}
+.etc .inner .txt .fix {position: absolute; left: 5%; top: 40%; opacity: 0;}
+.etc .inner .txt .fix.on {position: fixed; left: 15%; top: 40%; transition: all 0.3s; opacity: 1;}
+.etc .inner .txt .fix h2.img{vertical-align: text-bottom; margin-right: 25px;}
+.etc .inner .txt .fix h2 {font-size: 90px;}
+.etc .inner .txt .fix p {font-size: 20px;font-family: 'Noto Sans KR', sans-serif; font-weight: 300;}
+
+.etc .inner .right {width: 50%; margin-left: 300px;}
+.etc .inner .right li {margin-bottom: 50px;}
+.etc .inner .right li .txtBox {background: #F4D35E; border-radius: 50%; color: #fff; width: 140px; height: 140px; position: absolute; top: 13.1%; right: 38.5%; z-index: 1;}
+.etc .inner .right li .txtBox p {margin-top: 5px;}
+.etc .inner .right li video {display: inline-block; width: 600px; height: 400px; position: relative;}
+
+.etc .inner .right li .txtBox2 {background: #010A13; border-radius: 50%; color: #fff; width: 140px; height: 140px; position: absolute; top: 26.8%; right: 38.5%; z-index: 1;}
+.etc .inner .right li .txtBox3 {background: #010A13; border-radius: 50%; color: #fff; width: 140px; height: 140px; position: absolute; top: 40.1%; right: 38.5%; z-index: 1;}
+.etc .inner .right li .txtBox4 {background: #010A13; border-radius: 50%; color: #fff; width: 140px; height: 140px; position: absolute; top: 54.3%; right: 38.5%; z-index: 1;}
+.etc .inner .right li .txtBox5 {background: #010A13; border-radius: 50%; color: #fff; width: 140px; height: 140px; position: absolute; top: 67.5%; right: 38.5%; z-index: 1;}
+.etc .inner .right li .txtBox6 {background: #E21E2F; border-radius: 50%;color: #fff; width: 140px; height: 140px; position: absolute; top: 81%; right: 38.5%; z-index: 1;}
+.etc .inner .right p {font-size: 14px; text-align: center; line-height: 1.7;}
+
+
+
+/* footer */
+footer {width: 100%; height: 530px; background: #FFECAE; position: relative;}
+footer h2 {padding: 230px 0 0 347px;}
+footer h2 span {color: #010A13;}
+footer .address {position: absolute; top: 60%; right: 15%; font-family: 'Gowun Dodum', sans-serif;}
+footer .address p {font-size: 28px; font-family: 'Gowun Dodum', sans-serif;}
+footer .address p:nth-child(2) {font-size: 23px;}
+footer .address li {display: inline-block;padding: 20px 10px; vertical-align:middle;}
+footer .address {border-bottom: 1px solid #707070; border-top: 1px solid #707070;}
+footer .address li::before {content: ''; border-bottom: 1px solid #707070; position: absolute;left: 1px; bottom: 47%; width: 420px;}
+
+
+/*footer-꾸밈이미지*/
+footer .image img:nth-child(1) {position: absolute; top:35%; left: 37%; width: 40px;}
+footer .image img:nth-child(2) {position: absolute; top:22.2%; right: 20%;}
+
+
+
+/* 꾸밈이미지 애니메이션 */
+@keyframes moveUpdown {
+	    0% {margin-top: 15px;} 
+	    100% {margin-top: 0px;}
+    }
+
+    .rstar {animation: moveUpdown 0.3s linear 0s infinite alternate; animation-duration: 0.7s;}
+    .ystar {animation: moveUpdown 0.3s linear 0s infinite alternate; animation-duration: 1s;}
+
+@keyframes moveDownup {
+        0% {margin-bottom: 15px;} /* 처음 위치 */
+        100% {margin-bottom: 0px;} /* 마지막 위치 */
+    }
+
+    .bstar {animation: moveDownup 0.3s linear 0s infinite alternate; animation-duration: 2s;}
+
+@keyframes rotate {
+        0% {rotate: (0deg);}
+        15%{transform: rotate(-15deg);}
+        30%{rotate: (0deg);}
+    }
+
+    .rzig {animation-name: rotate; animation-duration: 3s; animation-iteration-count: infinite;}
+    
+@keyframes rotate2 {
+        0% {rotate: (0deg);}
+        15%{transform: rotate(15deg);}
+        30%{rotate: (0deg);}
+    }
+    .yzig {animation-name: rotate2; animation-duration: 3s; animation-iteration-count: infinite;}
+
+    @keyframes jump {
+        0%   {transform: translate3d(-8%,0,0) ;}
+        40%  {transform: translate3d(0%,10%,0); transform: rotate(-5deg)}
+        100% {transform: translate3d(8%,0%,0);}
+    }
+    .cat3 {transform-origin: 50% 50%; animation: jump 2s linear alternate infinite;}
+
+    @keyframes zigzag {
+        0% {transform: translateX(0px);}
+        50% {transform: translateX(5px);}
+        100% {transform: translateX(0px);}
+    }
+    
+    .bzig {animation: zigzag; animation-duration: 3s;animation-iteration-count: infinite; }
+
+
+    /* 텍스트 애니메이션 */
+@keyframes textAni2 {
+    0% {opacity: 0; }
+    30% {opacity: 0; transform: translate3d(0,40px,0) skewY(8deg); transform-origin: top left;}
+}
+
+.tit.motion b {transform:  translate3d(0,0,0) skewY(0deg); overflow: hidden; display: block; }
+.tit.motion b i {overflow: hidden; display: block; animation-name: textAni2; animation-duration: 1s;}
+
+
+
+@keyframes move_up2 {
+    0% {opacity: 1; transform: translate(50%,-25px);}
+    80% {opacity: 1; transform: translate(50%,0);}
+}
+
+
+
+
+@keyframes slide-down {
+    0% {opacity: 1; transform: translateY(20px);}
+    80% {opacity: 1; transform: translateY(0)}
+}
+
+
+
+
+@keyframes slide_up {
+    0% {opacity: 0; transform: translateY(40px);}
+    80% {opacity: 1; transform: translateY(0)}
+}
+
+
+
+
+@keyframes fade-in {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+
+@keyframes slide_right {
+    0% {opacity: 1; transform: translateX(50px);}
+    100% {opacity: 1; transform: translateX(0);}
+}
+
+
+
+
+
+@keyframes slide_left {
+    0% {opacity: 1; transform: translateX(-50px);}
+    100% {opacity: 1; transform: translateX(0);}
+}
+
+
+@keyframes slide_right2 {
+    0% {opacity: 0; transform: translateX(20px);}
+    100% {opacity: 1; transform: translateX(0);}
+}
+
+.clone .inner .left h3.motion {animation-name:slide_right2; animation-duration: .9s;}
+.renewal .inner .left h3.motion {animation-name:slide_right2; animation-duration: .9s;}
+
+
+@keyframes slide_right3 {
+    0% {opacity: 0; transform: translate(20px,-50%);}
+    100% {opacity: 1; transform: translate(0,-50%);}
+}
+
+
+
+@keyframes slide_left2 {
+    0% {opacity: 0; transform: translate(-20px,-50%);}
+    100% {opacity: 1; transform: translate(0px,-50%);}
+}
+
+
+@keyframes slide_left3 {
+    0% {opacity: 0; transform: translate(-20px);}
+    100% {opacity: 1; transform: translate(0px);}
+}
+
+.clone .inner .right h3.motion {animation-name:slide_left3; animation-duration: .9s;}
+.renewal .inner .right h3.motion {animation-name:slide_left3; animation-duration: .9s;}
+
+
+
+
+
+@keyframes slide1 {
+    0% {opacity: 0; transform: translateY(20px);}
+    100% {opacity: 1; transform: translateY(0px);}
+}
+
+.clone .topText p.motion {animation-name: slide1; animation-duration: 1s;}
+.renewal .topText p.motion {animation-name: slide1; animation-duration: 1s;}
+.design .topText p.motion {animation-name: slide1; animation-duration: 1s;}
+
+@keyframes slide2 {
+    0% {opacity: 0; margin-top: 35px;}
+    60% {opacity: 1; margin-top: 0;}
+}
+
+
